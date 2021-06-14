@@ -19,30 +19,33 @@
           <h4>Income</h4>
           <p id="money-plus" class="money plus">+$0.00</p>
         </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money minus">-$0.00</p>
+        </div>
       </div>
-      <div>
-        <h4>Expense</h4>
-        <p id="money-minus" class="money minus">-$0.00</p>
-      </div>
-    </div>
 
-    <h3>History</h3>
-    <ul id="list" class="list">
-    <li class="minus"> <span>-$400</span><button class="delete-btn">x</button></li>
-    </ul>
+      <h3>History</h3>
+      <ul id="list" class="list">
+        <li class="minus">
+          <span>-$400</span><button class="delete-btn">x</button>
+        </li>
+      </ul>
 
-    <h3>Add new transaction</h3>
-    <form id="form">
+      <h3>Add new transaction</h3>
+      <form id="form">
         <div class="form-control">
-            <label for="text">Text</label>
-            <input type="text" placeholder="Enter text..." id="text">
+          <label for="text">Text</label>
+          <input type="text" placeholder="Enter text..." id="text" />
         </div>
         <div class="form-control">
-            <label for="amount">Amount <br />(negative - expense, positive - income)</label>
-            <input type="number" placeholder="Enter amount..." id="amount">
+          <label for="amount"
+            >Amount <br />(negative - expense, positive - income)</label
+          >
+          <input type="number" placeholder="Enter amount..." id="amount" />
         </div>
         <button class="btn">Add transaction</button>
-    </form>
+      </form>
     </div>
 
     <script src="script.js"></script>
