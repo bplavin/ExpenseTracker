@@ -97,6 +97,12 @@ input[type="number"] {
   background-color: #9c88ff;
   color: #fff;
   box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
 }
 
 .list {
@@ -114,4 +120,32 @@ input[type="number"] {
   justify-content: space-between;
   color: #333;
   position: relative;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+  line-height: 20px;
+  transform: translate(-100%, -50%);
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
 }
